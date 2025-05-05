@@ -14,12 +14,14 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      text-align: center;
     }
 
     h1 {
-      font-size: 3em;
+      font-size: 4em;
       color: white;
       margin-bottom: 20px;
+      font-weight: bold;
     }
 
     button {
@@ -30,6 +32,8 @@
       cursor: pointer;
       border-radius: 15px;
       border: none;
+      background-color: #ff69b4;
+      color: white;
     }
 
     #message {
@@ -57,7 +61,6 @@
       50% { transform: translateY(-30px); opacity: 0.8; }
       100% { transform: translateY(0); opacity: 1; }
     }
-
   </style>
 </head>
 <body>
@@ -67,7 +70,7 @@
     <button id="noBtn">No</button>
   </div>
   <div id="noMessages"></div>
-  <div id="message">Me encanta saber que tu respuesta es un si, te amo. ❤️</div>
+  <div id="message">Me encanta saber que esa es tu respuesta, te amo. ❤️</div>
 
   <script>
     const yesBtn = document.getElementById('yesBtn');
@@ -79,13 +82,12 @@
       "¿Estás segura de tu respuesta? 😢",
       "¿De verdad quieres decir que no? 🥺",
       "Esto no lo esperaba... 😥",
-      "¿Qué pasó porque es un no? 😞",
+      "¿Qué pasó? 😞",
       "Eso me rompe el corazón... 💔",
       "¿Segura que no quieres pensarlo más? 🤔",
       "¿Realmente crees que es un no definitivo? 😓",
       "No te vayas... 😭",
-      "Esto duele mucho... 😞"
-      "dale dime que si que te cuesta se querer bonito",
+      "Esto duele un poquito... 😞"
     ];
 
     // Función para crear corazones flotantes
